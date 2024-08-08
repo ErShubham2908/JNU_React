@@ -1,5 +1,3 @@
-# JavaScript and ES6 Feature - Day 1 (7th Aug '24)
-
 ## What is JavaScript?
 + JavaScript is a programming language that adds interactivity to your website.
 + JavaScript is a single threaded, synchronous programming language.
@@ -102,7 +100,7 @@ console.log(person1.name); // John`
 10. **Generator Functions**
 
 
-# React JS - Day 2 (8th Aug '24)
+# React JS
 + React.js is a popular JavaScript library used for building user interfaces, particularly single-page applications where data can change over time without reloading the page.
 + **Feature of React JS**
   + Component-Based: React is based on a component-based architecture, where UIs are broken down into small, reusable pieces called components. Each component manages its own state and can be composed together to build complex UIs.
