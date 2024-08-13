@@ -145,7 +145,16 @@ console.log(person1.name); // John`
 
 -> **Code is available in Session.js**
 
-# ReactJS
+# ReactJS - Day 3
+
+### Export and Import
++ Two type of Export
+  1. Default Export - 
+     + using default keyword.
+     + Only one default export in single js file.
+  2. Name Export
+      + export using components name with {} bracket.
+
 ### V-DOM : 
 + The Virtual DOM (V-DOM) is a key concept in modern web development, especially within library like React.
 
@@ -193,3 +202,21 @@ console.log(person1.name); // John`
 11. Props are crucial for building complex UI structures by breaking down components into smaller, reusable units.
 
 -> **All code is available - Aug13 folder**
+
+### Components: Two Type of Components.
+1. **Function based Components**
+   + Function-based components, also known as functional components, are one of the two primary ways to define components in React (the other being class-based components). Functional components are simpler, easier to read, and have become the standard way to write components in modern React applications, especially with the introduction of **React Hooks**.
+   + **Key Features**
+     1. **Simple JavaScript Functions:** Functional components are simply JavaScript functions that return JSX (a syntax extension that looks similar to HTML). These functions receive a props object as an argument and return the UI to be rendered.
+     2. **Hooks for State and Lifecycle:** With the introduction of React Hooks in version 16.8, functional components can now handle state and side effects, which were previously only possible in class components. Hooks like useState and useEffect allow functional components to manage state and perform lifecycle-related tasks.
+     3. **Stateless or Stateful:** Originally, functional components were referred to as "stateless" components because they couldn't manage their own state. However, with Hooks, functional components can now be either stateless or stateful.
+2. **Class based Components** class-based components are one of the two ways to define components, with the other being functional components. Class-based components were the original way to create components in React before the introduction of hooks, and they are still widely used in many applications, especially those built before hooks were introduced.
+   + **Key Features**
+    1. **Defined Using ES6 Classes:** Class-based components are created using JavaScript ES6 classes. These classes extend from React.Component, which gives them access to several features, including lifecycle methods and state management.
+    2. **Lifecycle Methods:** Class components have access to React's lifecycle methods, which allow you to hook into different stages of a component's life, such as when it is mounted, updated, or unmounted. Some common lifecycle methods include:
+        + **componentDidMount():** Called once, immediately after the component is added to the DOM.
+        + **componentDidUpdate():** Called after the component has been updated.
+        + **componentWillUnmount():** Called just before the component is removed from the DOM.
+3. **State Management:** Class-based components have their own internal state, which is an object that holds data that can change over time. State is managed using this.state and can be updated using this.setState().
+4. **this Keyword:** In class components, you often work with the this keyword to access props, state, and methods. This is why it’s important to correctly bind methods in class components, either by using arrow functions or by binding them in the constructor.
+5. **Render Method:** Every class-based component must implement a render() method, which returns the JSX that defines the component's UI. This method is called every time the component's state or props change.
