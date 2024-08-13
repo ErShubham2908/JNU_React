@@ -155,6 +155,23 @@ console.log(person1.name); // John`
   2. Name Export
       + export using components name with {} bracket.
 
+### What is Library & Framework?
+
++ **Frameword:** A framework is like a structure that provides a base for the application development process. With the help of a framework, you can avoid writing everything from scratch. Frameworks provide a set of tools and elements that help in the speedy development process. It acts like a template that can be used and even modified to meet the project requirements.
+
++ **Library:** A library is a group of pre-written codes that make jobs easier to complete. A library is a collection of pre-defined methods and classes that developers can use to ease their work and accelerate development.
+
+### Difference b/w Library & Frameword
+
+| Library | Frameword|
+|-------|----------|
+|A set of assistance modules, objects, classes, functions, pre-written code, and so on| Includes a variety of APIs, compilers, support applications, libraries, and so on.|
+|Can be easily substituted by another library.	| Are tough to replace.|
+|When we call a method from a library, we are in control.	| Inversion of control, i.e. the framework calls us.|
+| Since developing a library needs less code, performance and load time are improved.	| The construction of a framework necessitates large amounts of code, which reduces performance and increases load time.|
+| Libraries can be simply linked into existing programs to add specific functionality.	| It is tough to incorporate a framework seamlessly into an existing project.|
+
+
 ### V-DOM : 
 + The Virtual DOM (V-DOM) is a key concept in modern web development, especially within library like React.
 
