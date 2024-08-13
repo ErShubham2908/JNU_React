@@ -178,3 +178,18 @@ console.log(person1.name); // John`
 2. **State Change:** When the state of the application changes, a new Virtual DOM tree is created.
 3. **Diffing Algorithm:**The new Virtual DOM tree is compared to the previous one using the diffing algorithm to identify changes.
 4. **Patching the Real DOM:** Only the changes are applied to the real DOM, which updates the UI.
+
+### Props (Properties)
+1. Props is short for properties and is a mechanism to pass data from a parent component to a child component.
+2. Props are read-only, meaning the child component cannot modify the data passed from the parent.
+3. They are similar to function arguments, allowing you to customize child components with different data.
+4. Props are essential for creating reusable and composable components.
+5. They enable a unidirectional data flow, making it easier to reason about and debug applications.
+6. Props can be passed as primitive values (strings, numbers, booleans), objects, or functions.
+7. When passing objects, the child component receives a reference to the same object, so changes made in the child will affect the parent.
+8. To avoid unintended side effects, it's recommended to create copies of objects before passing them as props.
+9. Props are accessed within a child component using the this.props object in class components or directly as props in functional components.
+10. Default props can be defined using the defaultProps property on a component to provide fallback values.
+11. Props are crucial for building complex UI structures by breaking down components into smaller, reusable units.
+
+-> **All code is available - Aug13 folder**
