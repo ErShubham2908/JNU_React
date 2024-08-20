@@ -240,9 +240,7 @@ console.log(person1.name); // John`
 4. **this Keyword:** In class components, you often work with the this keyword to access props, state, and methods. This is why it’s important to correctly bind methods in class components, either by using arrow functions or by binding them in the constructor.
 5. **Render Method:** Every class-based component must implement a render() method, which returns the JSX that defines the component's UI. This method is called every time the component's state or props change.
 
-# React JS - Day 4
-
-## Class Based Components - 
+# React JS - Day 4 
 
 ## Difference between Props and State
 => Props and state are fundamental concepts in React for managing data flow and component behavior.
