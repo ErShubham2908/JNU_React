@@ -237,3 +237,17 @@ console.log(person1.name); // John`
 3. **State Management:** Class-based components have their own internal state, which is an object that holds data that can change over time. State is managed using this.state and can be updated using this.setState().
 4. **this Keyword:** In class components, you often work with the this keyword to access props, state, and methods. This is why it’s important to correctly bind methods in class components, either by using arrow functions or by binding them in the constructor.
 5. **Render Method:** Every class-based component must implement a render() method, which returns the JSX that defines the component's UI. This method is called every time the component's state or props change.
+
+# React JS - Day 4
+
+## Difference between Props and State
+=> Props and state are fundamental concepts in React for managing data flow and component behavior.
+
+| SNo | Topic | Props | State |
+| --- |---|---|---|
+| 01. |**Direction of Data Flow** | Data flows from parent components to child components. They are read-only within the child component.|  Data is managed within the component itself. It can be modified by the component using the setState method.|
+|02. | **Mutability** | Immutable. Their values cannot be changed from within the child component. | Mutable. Their values can be changed by the component using the setState method, triggering a re-render.|
+|03. | **Ownership** | Owned by the parent component. |  Owned by the component itself. |
+|04. | **Use Cases** | Primarily used for passing data and configuration from parent to child components. | Used for managing data that changes over time within a component, such as user input, component state, or fetched data. |
+|05. | Access | Accessed using this.props in class components or directly as arguments in functional components.| Accessed using this.state in class components or using the useState hook in functional components. |
+ 
