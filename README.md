@@ -228,9 +228,11 @@ console.log(person1.name); // John`
      2. **Hooks for State and Lifecycle:** With the introduction of React Hooks in version 16.8, functional components can now handle state and side effects, which were previously only possible in class components. Hooks like useState and useEffect allow functional components to manage state and perform lifecycle-related tasks.
      3. **Stateless or Stateful:** Originally, functional components were referred to as "stateless" components because they couldn't manage their own state. However, with Hooks, functional components can now be either stateless or stateful.
 2. **Class based Components** class-based components are one of the two ways to define components, with the other being functional components. Class-based components were the original way to create components in React before the introduction of hooks, and they are still widely used in many applications, especially those built before hooks were introduced.
+   
    + **Key Features**
-    1. **Defined Using ES6 Classes:** Class-based components are created using JavaScript ES6 classes. These classes extend from React.Component, which gives them access to several features, including lifecycle methods and state management.
-    2. **Lifecycle Methods:** Class components have access to React's lifecycle methods, which allow you to hook into different stages of a component's life, such as when it is mounted, updated, or unmounted. Some common lifecycle methods include:
+   1. **Constructor:** The constructor() method is used for initializing state and binding event handlers. It's called when an instance of the component is created. and Always call super(props) before accessing this.
+   2.  **Defined Using ES6 Classes:** Class-based components are created using JavaScript ES6 classes. These classes extend from React.Component, which gives them access to several features, including lifecycle methods and state management.
+    3. **Lifecycle Methods:** Class components have access to React's lifecycle methods, which allow you to hook into different stages of a component's life, such as when it is mounted, updated, or unmounted. Some common lifecycle methods include:
         + **componentDidMount():** Called once, immediately after the component is added to the DOM.
         + **componentDidUpdate():** Called after the component has been updated.
         + **componentWillUnmount():** Called just before the component is removed from the DOM.
@@ -240,14 +242,17 @@ console.log(person1.name); // John`
 
 # React JS - Day 4
 
+## Class Based Components - 
+
 ## Difference between Props and State
 => Props and state are fundamental concepts in React for managing data flow and component behavior.
 
 | SNo | Topic | Props | State |
 | --- |---|---|---|
-| 01. |**Direction of Data Flow** | Data flows from parent components to child components. They are read-only within the child component.|  Data is managed within the component itself. It can be modified by the component using the setState method.|
-|02. | **Mutability** | Immutable. Their values cannot be changed from within the child component. | Mutable. Their values can be changed by the component using the setState method, triggering a re-render.|
-|03. | **Ownership** | Owned by the parent component. |  Owned by the component itself. |
-|04. | **Use Cases** | Primarily used for passing data and configuration from parent to child components. | Used for managing data that changes over time within a component, such as user input, component state, or fetched data. |
-|05. | Access | Accessed using this.props in class components or directly as arguments in functional components.| Accessed using this.state in class components or using the useState hook in functional components. |
+| 01. | **Definition and Scope** | Short for properties, props are passed to a component from its parent component. They are immutable (read-only) within the component that receives them. | State is managed within a component itself and is used to store mutable data that affects a component's rendering and behavior. |
+| 02. |**Direction of Data Flow** | Data flows from parent components to child components. They are read-only within the child component.|  Data is managed within the component itself. It can be modified by the component using the setState method.|
+| 03. | **Mutability** | Immutable. Their values cannot be changed from within the child component. | Mutable. Their values can be changed by the component using the setState method, triggering a re-render.|
+| 04. | **Ownership** | Owned by the parent component. |  Owned by the component itself. |
+| 05. | **Use Cases** | Primarily used for passing data and configuration from parent to child components. | Used for managing data that changes over time within a component, such as user input, component state, or fetched data. |
+| 06. | **Access** | Accessed using this.props in class components or directly as arguments in functional components.| Accessed using this.state in class components or using the useState hook in functional components. |
  
